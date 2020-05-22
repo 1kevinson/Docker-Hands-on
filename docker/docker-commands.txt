@@ -4,9 +4,12 @@ download image on dockerHub
 
 
 -- docker run
-It's use to run a container from and image, first try to find image locally, if there is not image,then download it from dockerhub 
-GOOD TO KNOW : Container only run if it's have a task running inside, that's why we run bash with centos container ( if there is no task running container will automatically stop )
+#It's use to run a container from and image, first try to find image locally, if there is not image,then download it from dockerhub 
+#GOOD TO KNOW : Container only run if it's have a task running inside, that's why we run bash with centos container ( if there is no task running container will automatically stop )
 > docker run centos
+
+#Docker container Id
+[root@3c21189545df /]#   ----> 3c21189545df in the unique Id of the docker container
 
 #login in the container once it's run (-it) and execute the bash command to dive into the image pulled
 > docker run -it centos bash
