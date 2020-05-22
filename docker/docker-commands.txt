@@ -18,6 +18,9 @@ download image on dockerHub
 #GOOD TO KNOW : for every task docker create a new instance of image (container)
 > docker run -d centos sleep 20
 
+#run with tag (version), if it's no tag setted docker use the default tag
+> docker run redis:4.0
+
 
 -- docker ps
 #list the running container info
@@ -50,3 +53,11 @@ download image on dockerHub
 -- docker exec
 #execute a command on a running container
 > docker exec 'conId' cat /etc/*release*
+
+
+-- docker container ip address
+> docker inspect --format '{{ .NetworkSettings.IPAddress }}' container_name_or_id
+
+
+»»» docker run - Port Mapping (80 local port , 5000 is container port)
+> docker run -p 80:5000 kodekloud/simple-webapp
