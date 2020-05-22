@@ -61,3 +61,11 @@ download image on dockerHub
 
 »»» docker run - Port Mapping (80 local port , 5000 is container port)
 > docker run -p 80:5000 kodekloud/simple-webapp
+
+
+-- inspect container
+> docker inspect 'name'
+
+
+-- logs container
+> docker logs 'name'
