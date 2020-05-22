@@ -14,5 +14,14 @@ download image on dockerHub
 #login in the container once it's run (-it) and execute the bash command to dive into the image pulled
 > docker run -it centos bash
 
+#run container in background (-d) & sleep the os after 20s (sleep 20)
+#GOOD TO KNOW : for every task docker create a new instance of image (container)
+> docker run -d centos sleep 20
 
 
+-- docker ps
+#list the running container info
+> docker ps 
+
+#list all containers that exited
+> docker ps -a
