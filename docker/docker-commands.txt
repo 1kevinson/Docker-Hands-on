@@ -45,3 +45,8 @@ download image on dockerHub
 
 #remove image by name
 > docker rmi 'name'
+
+
+-- docker exec
+#execute a command on a running container
+> docker exec 'conId' cat /etc/*release*
