@@ -25,3 +25,23 @@ download image on dockerHub
 
 #list all containers that exited
 > docker ps -a
+
+
+-- docker stop
+#stop container with name or container Id  (exit code 137)
+> docker stop 'name'
+
+
+-- docker rm 
+#remove containers with name or container Id
+> docker rm 'conId'
+> docker rm 'conId' 'conId' 'conId'
+
+
+-- docker images
+#GOOD TO KNOW - we cannot remove a image which have a container dependency ( remove the container first)
+#see the image i currrently have ()
+> docker images
+
+#remove image by name
+> docker rmi 'name'
