@@ -1,2 +1,7 @@
 -- Docker run
-It's use to run a container from and image
+It's use to run a container from and image, first try to find image locally, if there is not image,then download it from dockerhub
+> docker run centos
+
+#login in the container once it's run (-it) and execute the bash command to dive into the image pulled
+> docker run -it centos bash
+
