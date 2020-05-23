@@ -28,5 +28,9 @@ __GOOD TO KNOW__ : **for every task**, docker create a new instance of image (co
 run container with tag (version), if it's no tag setted docker use the default tag
 > docker run redis:4.0
 
-run container and map his port with the host port
+run container and map his port with the host port (cannot map when the container is running)
+> docker run -p `hostPort`:`containerPort` -d nginx
+
 > docker run -p 8000:80 -d nginx
+
+_then go back to the browser and open with localhost (host) 127.0.0.1:8080_
