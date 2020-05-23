@@ -36,7 +36,7 @@ remove containers with name or container Id
 
 > docker rm `conId` `conId` `conId`
 
-attach to a running container (stdin/stdout/sterr)
+attach (running in foreground) to a running container (stdin/stdout/sterr)
 
 > docker attach `name`
 

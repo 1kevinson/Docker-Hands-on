@@ -11,7 +11,8 @@ __GOOD TO KNOW__ : Container only run if it's have a task running inside, that's
 > docker run centos
 
 _Docker container Id_
-- [root@3c21189545df /]#   ----> 3c21189545df is the unique Id of the docker container
+
+-[root@3c21189545df /]#   ----> `3c21189545df` is the unique Id of the docker container
 
 login in the container once it's run (-it) and execute the bash command to open the terminal in the container
 > docker run -it centos bash
@@ -26,3 +27,6 @@ __GOOD TO KNOW__ : **for every task**, docker create a new instance of image (co
 
 run container with tag (version), if it's no tag setted docker use the default tag
 > docker run redis:4.0
+
+run container and map his port with the host port
+> docker run -p 8000:80 -d nginx
