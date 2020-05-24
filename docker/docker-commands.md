@@ -17,3 +17,6 @@ Search the docker hub for image ( with limit option)
 Always check there for good stuff 👇🏽
 
 [Docker-cli Reference](https://docs.docker.com/engine/reference/commandline/cli/)
+
+
+The ENTRYPOINT in docker file is the command to run the application

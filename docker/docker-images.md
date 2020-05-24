@@ -15,3 +15,10 @@ remove image by name or id
 > docker rmi `name`
 
 > docker rmi `id`
+
+
+to build a image (refer to the dockerfile in the same folder)
+> docker build .
+
+set image tag ( Repostiry name in `docker images`)
+> docker build . -t my-custom-webapp
