@@ -34,3 +34,15 @@ run container and map his port with the host port (cannot map when the container
 > docker run -p 8000:80 -d nginx
 
 _then go back to the browser and open with localhost (host) 127.0.0.1:8080_
+
+
+__docker run link__
+
+specify the container to link with their name (assuming redis is running)
+
+> docker run -p 5000:80 --link redis:redis voting-app
+
+
+links with two containers (assuming redis and db are running)
+
+> docker run --link redis:redis --lin db:db worker-app
